@@ -1,12 +1,5 @@
 from colors import *
-
-def isInt(s):
-    try: 
-        int(s)
-        return True
-    except ValueError:
-        return False
-
+from util import *
 def askOption(first, last):
     i = -1
     while i < first or i > last:
@@ -63,8 +56,7 @@ def menuRev():
 def menuSoftware():
     menu = """
 1. Create setuid binary.
-2. Obtain /etc/shadow hashes.
-3. Create basic user (Less noisy)
+2. APT module backdoor
 0. Back.
     """
     print(menu)

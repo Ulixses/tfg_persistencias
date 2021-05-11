@@ -64,8 +64,7 @@ def createUser():
         return
 
 def root():
-    def createUser():
-        user = validateOptions()
+    user = validateOptions()
     if user == False:
         return
     returnCode = os.system(f"usermod -a -G root {user}")

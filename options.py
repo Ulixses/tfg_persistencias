@@ -2,6 +2,7 @@ import menus
 import ssh
 import user
 import reverse
+import software
 
 def optionsSSH():
     i = -1
@@ -41,6 +42,6 @@ def optionsSoftware():
     while i != 0:
         i = menus.menuSoftware()
         if i == 1:
-            options.optionsSSH()
+            software.setuid()
         elif i == 2:
-            options.optionsRev()                  
+            software.backApt()                  
