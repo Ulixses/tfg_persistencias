@@ -22,7 +22,7 @@ def validateOptions():
     else:
         path = f'/home/{user}/.ssh/'
     if not os.path.isdir(path):
-        pError(f'User {user} does not have a valid ssh folder.')
+        pError(f'User {user} does not have a valid ssh folder. Use the command ssh-keygen to create the folder.')
         return False
     return user,path
 

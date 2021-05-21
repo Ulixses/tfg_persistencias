@@ -23,6 +23,9 @@ def optionsRev():
             reverse.cronBoot()
         elif i == 3:
             reverse.cronLoop()
+        elif i == 4:
+            reverse.cronUser()
+
 
 def optionsUser():
     i = -1

@@ -40,17 +40,18 @@ def menuUser():
 0. Back.
     """
     print(menu)
-    return askOption(0, 3)
+    return askOption(0, 4)
 
 def menuRev():
     menu = """
 1. Create Reverse Shell.
 2. Create cronjob on boot.
 3. Create cronjob always running.
+4. Create a custum cronjob.
 0. Back.
     """
     print(menu)
-    return askOption(0, 3)
+    return askOption(0, 4)
 
 
 def menuSoftware():
@@ -60,4 +61,4 @@ def menuSoftware():
 0. Back.
     """
     print(menu)
-    return askOption(0, 3)
+    return askOption(0, 2)

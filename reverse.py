@@ -62,3 +62,8 @@ def cronBoot():
 def cronLoop():
     code = reverse(False)
     util.addCron(code, condition="* * * * *")
+
+def cronUser():
+    code = reverse(False)
+    cond = input("Inserte cronjob condition(* * * * *): ")
+    util.addCron(code, condition=cond)

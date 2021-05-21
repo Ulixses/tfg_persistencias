@@ -59,7 +59,7 @@ def hashes():
                 print(line)
 
 def createUser():
-    user = validateOptions()
+    user = validateOptions(True)
     if user == False:
         return
 
