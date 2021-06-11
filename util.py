@@ -23,7 +23,7 @@ def stringGenerator(size=6):
     return ''.join(random.choices(string.ascii_letters, k=size))
 
 def addCron(cmd, condition = "@reboot",user="root"):
-    job = condition + " " + user + " " + cmd
+    job = condition + " bash -c '" + cmd + "'"
     cron = f'(crontab -l; echo "{job}" ) | crontab -'
     pGood(f'Cronjob {job} added.')
     os.system(cron)
